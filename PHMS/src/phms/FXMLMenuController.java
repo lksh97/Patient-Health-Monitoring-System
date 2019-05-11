@@ -190,9 +190,9 @@ public class FXMLMenuController implements Initializable{
     @FXML
     void notify(ActionEvent event) throws SQLException {
         String ACCOUNT_SID =
-            "ACb1e440ceb2b9299d3fcf4634714d024a";
+            "xxxxxxx";
         String AUTH_TOKEN =
-            "87c3b383366f68950818d1cc0f2842c5";
+            "xxxxxx";
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         
         DateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
