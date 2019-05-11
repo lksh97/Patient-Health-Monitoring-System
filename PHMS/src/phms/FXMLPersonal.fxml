@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="667.0" prefWidth="725.0" style="-fx-background-image: 40;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phms.FXMLPersonController">
+   <children>
+      <Pane layoutX="7.0" prefHeight="574.0" prefWidth="718.0" style="-fx-background-image: 40;">
+         <children>
+            <Label alignment="CENTER" prefHeight="84.0" prefWidth="606.0" style="-fx-background-color: #0000FF;" text="Patient Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="81.0" layoutY="98.0" prefHeight="32.0" prefWidth="110.0" text="First Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="144.0" prefHeight="25.0" prefWidth="95.0" text="Last Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="188.0" prefHeight="32.0" prefWidth="95.0" text="Gender">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="239.0" prefHeight="32.0" prefWidth="81.0" text="Mobile">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="287.0" prefHeight="32.0" prefWidth="95.0" text="Occupation">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="357.0" prefHeight="32.0" prefWidth="95.0" text="Address">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fname" layoutX="301.0" layoutY="98.0" prefHeight="32.0" prefWidth="231.0" />
+            <TextField fx:id="lname" layoutX="299.0" layoutY="141.0" prefHeight="32.0" prefWidth="231.0" />
+            <TextField fx:id="mobile" layoutX="299.0" layoutY="239.0" prefHeight="32.0" prefWidth="231.0" />
+            <TextField fx:id="occupation" layoutX="300.0" layoutY="287.0" prefHeight="32.0" prefWidth="231.0" />
+            <Button fx:id="logout" layoutX="615.0" layoutY="5.0" mnemonicParsing="false" onAction="#logOut" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #f7786b;" text="Logout" textFill="WHITE" />
+            <TextArea fx:id="address" layoutX="199.0" layoutY="339.0" prefHeight="99.0" prefWidth="488.0" />
+            <ComboBox fx:id="genderBox" layoutX="290.0" layoutY="188.0" prefHeight="32.0" prefWidth="252.0" promptText="Select your Gender" />
+            <Button fx:id="Mrecord" layoutX="455.0" layoutY="469.0" mnemonicParsing="false" onAction="#Upload" prefHeight="44.0" prefWidth="252.0" style="-fx-background-color: #FFA500;" text="Upload Medical Record" textFill="WHITE" />
+            <Label fx:id="myLabel" alignment="CENTER" layoutX="164.0" layoutY="469.0" prefHeight="44.0" prefWidth="279.0" text="File Not Selected" />
+            <Label layoutX="71.0" layoutY="538.0" prefHeight="44.0" prefWidth="164.0" text="Appointment Date">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date" layoutX="359.0" layoutY="538.0" prefHeight="44.0" prefWidth="252.0" />
+         </children>
+      </Pane>
+      <Button fx:id="back" layoutX="567.0" layoutY="602.0" mnemonicParsing="false" onAction="#goBack" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #0000CD;" text="Done" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="93.0" layoutY="602.0" mnemonicParsing="false" onAction="#move" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #0000FF;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="phms.FXMLlineChartController">
+   <children>
+      <LineChart fx:id="lineChart" layoutX="34.0" layoutY="25.0" prefHeight="424.0" prefWidth="525.0" title="Patient Health Improvent Graph">
+        <xAxis>
+          <CategoryAxis label="Date" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Rating" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="271.0" layoutY="460.0" mnemonicParsing="false" onAction="#close" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: #f7786b;" text="Close" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
